@@ -34,13 +34,15 @@ if ($_SESSION['rol'] == "ADMIN" and isset($_SESSION['user'])) {
             </div>
             <div>
                 <label>Productos registrados</label>
+                <br>
                 <table border="1">
                     <thead>
                         <th>Producto</th>
                         <th>Precio</th>
                     </thead>
                     <?php
-                    $sql = "SELECT descrip, precio FROM productos WHERE tienda ='$usuario'";
+                    
+                    $sql = "SELECT descrip, precio FROM productos ";
                     $res = mysqli_query($con, $sql);
                     while ($row = mysqli_fetch_array($res)) {
                         if ($row) {
@@ -58,6 +60,7 @@ if ($_SESSION['rol'] == "ADMIN" and isset($_SESSION['user'])) {
             </div>
             <div>
                 <label>Lista de Pedidos</label>
+                <br>
                 <table border="1">
                     <thead>
                         <th>Cliente</th>
