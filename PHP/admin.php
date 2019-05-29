@@ -33,6 +33,7 @@ if ($_SESSION['rol'] == "ADMIN" and isset($_SESSION['user'])) {
                 <?php } ?>
             </div>
             <div>
+                <hr>
                 <label>Productos registrados</label>
                 <br>
                 <table border="1">
@@ -59,6 +60,7 @@ if ($_SESSION['rol'] == "ADMIN" and isset($_SESSION['user'])) {
                 </table>
             </div>
             <div>
+                <hr>
                 <label>Lista de Pedidos</label>
                 <br>
                 <table border="1">
